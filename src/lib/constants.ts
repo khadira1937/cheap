@@ -1,6 +1,6 @@
 export const SITE_NAME = "Cheap IPTV";
 export const SITE_URL = "https://cheap-iptv.tv";
-export const CONTACT_EMAIL = "support@cheap-iptv.tv";
+export const CONTACT_EMAIL = "contact@buy-iptv-uk.com";
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -28,7 +28,7 @@ export const FEATURES = [
   {
     title: "Cheap IPTV Subscription With 37,000 Channels",
     description:
-      "Every Premier League fixture, every Sky Atlantic box set and every CBeebies morning unlock from one payment — no bolt-ons, no tiered upgrades, no nasty surprises on the bank statement.",
+      "Every top-tier football fixture, premium box set and morning kids' content unlock from one payment — no bolt-ons, no tiered upgrades, no nasty surprises on the bank statement.",
     icon: "Tv" as const,
   },
   {
@@ -190,7 +190,7 @@ export const TESTIMONIALS = [
   {
     name: "Priya K.",
     location: "Leicester",
-    text: "Paying seventy-two pounds a month for Sky was punishing. This cheap IPTV subscription delivers more channels, sharper picture quality and costs less than a pizza. Life-changing for the household budget.",
+    text: "Paying seventy-two pounds a month for traditional pay-TV was punishing. This cheap IPTV subscription delivers more channels, sharper picture quality and costs less than a pizza. Life-changing for the household budget.",
     rating: 5,
     avatar: "PK",
     since: "January 2026",
@@ -198,7 +198,7 @@ export const TESTIMONIALS = [
   {
     name: "Tom H.",
     location: "Swansea",
-    text: "The 4K quality matches Virgin exactly. Five screens for the whole family on one account — the cheapest deal available and the best IPTV UK service tested in months.",
+    text: "The 4K quality is on par with premium cable. Five screens for the whole family on one account — the cheapest deal available and the best IPTV UK service tested in months.",
     rating: 5,
     avatar: "TH",
     since: "February 2026",
@@ -230,7 +230,7 @@ export const TESTIMONIALS = [
   {
     name: "Ben O.",
     location: "Exeter",
-    text: "Cancelling Netflix, Disney+ and Prime was easy. This one IPTV subscription replaces all three plus live sport and costs half the combined total. The maths is absurd.",
+    text: "Cancelling the major streaming subscriptions was easy. This one IPTV subscription replaces them all plus live sport and costs half the combined total. The maths is absurd.",
     rating: 5,
     avatar: "BO",
     since: "October 2025",
@@ -243,7 +243,7 @@ export const DEVICES = [
   { name: "Android / iOS", icon: "Smartphone" as const },
   { name: "Windows / Mac", icon: "Monitor" as const },
   { name: "IPTV Box / MAG", icon: "Box" as const },
-  { name: "Apple TV", icon: "Airplay" as const },
+  { name: "tvOS Devices", icon: "Airplay" as const },
 ] as const;
 
 export const FAQ_ITEMS = [
@@ -288,9 +288,9 @@ export const FAQ_ITEMS = [
       "Every plan comes with a 30-day refund guarantee. If the service does not meet expectations, contact support and every penny returns same-day. No forms, no retention calls.",
   },
   {
-    question: "How does this compare to Sky?",
+    question: "How does this compare to traditional pay-TV?",
     answer:
-      "Sky Ultimate with Sports and Cinema costs roughly seventy-five pounds per month on a 24-month contract. This cheap IPTV subscription delivers 37,000 channels from £4.99/month with no lock-in. More content, lower price, greater flexibility.",
+      "A premium pay-TV bundle with sports and cinema costs roughly seventy-five pounds per month on a 24-month contract. This cheap IPTV subscription delivers 37,000 channels from £4.99/month with no lock-in. More content, lower price, greater flexibility.",
   },
   {
     question: "Is a separate VPN required?",
@@ -310,7 +310,7 @@ export const CHANNEL_CATEGORIES = [
     count: "5,500+",
     icon: "Trophy" as const,
     channels:
-      "Sky Sports Main Event through Arena, TNT Sports, Premier Sports, Eurosport and every racing channel. Every Premier League match, Champions League night and Six Nations weekend streams live in HD or 4K — all inside the cheapest IPTV UK package.",
+      "Major UK sports channels, premium sports broadcasting, racing channels and rugby coverage. Every top-tier football match, European football night and rugby weekend streams live in HD or 4K — all inside the cheapest IPTV UK package.",
   },
   {
     name: "British IPTV Entertainment — Premium & Complete Line-Up",
@@ -324,7 +324,7 @@ export const CHANNEL_CATEGORIES = [
     count: "198,000+",
     icon: "Film" as const,
     channels:
-      "Sky Cinema, Film4, Paramount+ originals and international premieres. A library that dwarfs Netflix and Disney+ combined, included in every cheap IPTV plan without a separate subscription.",
+      "Premium movie channels, originals from mainstream platforms and international premieres. A library that rivals what major streaming services combined can offer, included in every cheap IPTV plan without a separate subscription.",
   },
   {
     name: "Kids & Family — Complete Parental Coverage",
@@ -338,7 +338,7 @@ export const CHANNEL_CATEGORIES = [
     count: "1,200+",
     icon: "Newspaper" as const,
     channels:
-      "BBC News, Sky News, GB News, CNN International, Al Jazeera and Bloomberg run live in a dedicated news category. Stay current on every story as it breaks.",
+      "Major UK news channels, international news networks, business news feeds and global current-affairs coverage all run live in a dedicated news category. Stay current on every story as it breaks.",
   },
   {
     name: "International — 40+ Language Packs Included",
@@ -369,19 +369,19 @@ export const BLOG_POSTS = [
     category: "Tutorial",
   },
   {
-    slug: "iptv-vs-sky-comparison",
-    title: "Cheap IPTV vs Sky — Which Service Is Better For UK Viewers In 2026?",
+    slug: "iptv-vs-traditional-tv",
+    title: "Cheap IPTV vs Traditional UK TV Packages — Which Is Better Value In 2026?",
     excerpt:
-      "An honest comparison of cheap IPTV and Sky TV for UK households. Costs, channel availability, picture quality, flexibility and value — everything needed to make the switch.",
+      "An honest comparison of cheap IPTV and traditional UK TV packages. Costs, channel availability, picture quality, flexibility and value — everything needed to decide.",
     date: "2026-03-15",
     readTime: "8 min read",
     category: "Comparison",
   },
   {
-    slug: "premier-league-streaming-guide",
-    title: "Watch Every Premier League Match — Cheap IPTV Streaming Guide",
+    slug: "live-uk-sports-streaming-guide",
+    title: "Watch Live UK Sports — Cheap IPTV Streaming Guide",
     excerpt:
-      "Every Premier League match, plus Championship, La Liga, Serie A and more — all in stunning HD and 4K quality through a cheap IPTV subscription.",
+      "Top-tier UK football, domestic cup ties, European nights and combat sports — all covered in stunning HD and 4K quality through a cheap IPTV subscription.",
     date: "2026-03-10",
     readTime: "5 min read",
     category: "Sports",
