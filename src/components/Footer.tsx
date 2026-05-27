@@ -11,7 +11,7 @@ export default function Footer() {
     <footer className="relative border-t border-violet-100/50 bg-gradient-to-b from-[#fafbff] to-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Main footer */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 py-16 lg:max-w-5xl lg:mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 py-16 lg:max-w-6xl lg:mx-auto">
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2.5 mb-4">
@@ -60,6 +60,39 @@ export default function Footer() {
                   </SectionLink>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          {/* Plans */}
+          <div>
+            <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-4">
+              Plans
+            </h3>
+            <ul className="space-y-3">
+              <li>
+                <Link
+                  href="/iptv-service-provider"
+                  className="text-sm text-muted transition-colors hover:text-violet-600"
+                >
+                  IPTV Service Provider
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/cheapest-iptv"
+                  className="text-sm text-muted transition-colors hover:text-violet-600"
+                >
+                  Cheapest IPTV
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/iptv-subscription"
+                  className="text-sm text-muted transition-colors hover:text-violet-600"
+                >
+                  IPTV Subscription
+                </Link>
+              </li>
             </ul>
           </div>
 
