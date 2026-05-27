@@ -387,3 +387,32 @@ export const BLOG_POSTS = [
     category: "Sports",
   },
 ] as const;
+
+export const WHATSAPP_NUMBER = "447878757831"; // E.164 format, no + or spaces
+export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
+
+export function buildWhatsAppCheckoutUrl(params: {
+  planName: string;
+  planPrice: number;
+  proxyProtection?: boolean;
+  extraConnection?: boolean;
+}): string {
+  const lines = [
+    `Hi cheap-iptv.tv team! I'd like to subscribe to:`,
+    ``,
+    `Plan: ${params.planName} — £${params.planPrice.toFixed(2)}`,
+  ];
+
+  if (params.proxyProtection) {
+    lines.push(`Add-on: Proxy Protection (+£15.00)`);
+  }
+
+  if (params.extraConnection) {
+    lines.push(`Add-on: Extra Connection`);
+  }
+
+  lines.push(``, `Please send me the next steps to complete payment.`);
+
+  const message = encodeURIComponent(lines.join('\n'));
+  return `${WHATSAPP_URL}?text=${message}`;
+}
