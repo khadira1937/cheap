@@ -18,7 +18,7 @@ export default function Footer() {
               <div className="relative h-12 w-12 shrink-0">
                 <Image
                   src="/cheap-iptv.webp"
-                  alt="Cheap IPTV logo"
+                  alt="Cheap IPTV UK — cheap IPTV subscription logo"
                   fill
                   sizes="48px"
                   loading="lazy"
@@ -30,7 +30,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-sm text-muted leading-relaxed mb-6">
-              The cheap IPTV subscription 50,000 UK homes trust. 37,000 live channels, 198,000 films and series, 4K UHD and built-in VPN — from £4.99/month.
+              The cheap IPTV subscription 50,000 UK homes trust. 37,000 live channels, 198,000 films and series, 4K UHD and built-in VPN — from £3.33/month.
             </p>
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-sm text-muted">
@@ -91,6 +91,14 @@ export default function Footer() {
                   className="text-sm text-muted transition-colors hover:text-violet-600"
                 >
                   IPTV Subscription
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/iptv-channels"
+                  className="text-sm text-muted transition-colors hover:text-violet-600"
+                >
+                  IPTV Channel List
                 </Link>
               </li>
             </ul>

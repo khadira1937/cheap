@@ -1,6 +1,16 @@
 export const SITE_NAME = "Cheap IPTV";
 export const SITE_URL = "https://cheap-iptv.tv";
-export const CONTACT_EMAIL = "contact@buy-iptv-uk.com";
+export const CONTACT_EMAIL = "contact@cheap-iptv.tv";
+
+// Single source of truth for the brand logo used in structured data.
+// Must point at a real file in /public (verified: /cheap-iptv.webp exists).
+export const LOGO_URL = `${SITE_URL}/cheap-iptv.webp`;
+
+// Named editorial author for E-E-A-T / Article authorship signals.
+export const AUTHOR = {
+  name: "Cheap IPTV Editorial Team",
+  url: `${SITE_URL}/contact`,
+} as const;
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -32,7 +42,7 @@ export const FEATURES = [
     icon: "Tv" as const,
   },
   {
-    title: "Premium IPTV Quality In Native 4K UHD",
+    title: "Premium-Grade IPTV Quality In Native 4K UHD",
     description:
       "Every plan streams in native 4K when the broadcaster supports it. Adaptive bitrate keeps the picture rock-steady when broadband fluctuates — premium visuals at a fraction of the premium price tag.",
     icon: "Monitor" as const,
@@ -108,13 +118,13 @@ export const PRICING_PLANS = [
     tier: "Silver",
     name: "6 Months",
     subtitle: "Six months of premium streaming at a budget price",
-    price: 39.99,
+    price: 35.99,
     originalPrice: 69.99,
-    perMonth: 6.66,
+    perMonth: 6.0,
     period: "6 months",
     devices: 5,
     badge: "Half-Year Savings",
-    discount: "-43%",
+    discount: "-49%",
     accentColor: "violet",
     features: [
       "37,000+ live channels with full UK coverage",
@@ -128,20 +138,20 @@ export const PRICING_PLANS = [
       "Instant activation in under 60 seconds",
     ],
     popular: false,
-    savings: "Save 43%",
+    savings: "Save 49%",
   },
   {
     id: "gold",
     tier: "Gold",
     name: "12 Months",
     subtitle: "The best-selling cheap IPTV plan in the UK",
-    price: 59.99,
+    price: 49.99,
     originalPrice: 99.99,
-    perMonth: 4.99,
+    perMonth: 4.17,
     period: "year",
     devices: 5,
-    badge: "Most Popular — Save 40%",
-    discount: "-40%",
+    badge: "Most Popular — Save 50%",
+    discount: "-50%",
     accentColor: "blue",
     features: [
       "37,000+ live channels with full UK coverage",
@@ -155,20 +165,20 @@ export const PRICING_PLANS = [
       "Instant activation in under 60 seconds",
     ],
     popular: true,
-    savings: "Save 40%",
+    savings: "Save 50%",
   },
   {
     id: "diamond",
     tier: "Diamond",
     name: "24 Months",
     subtitle: "Two years locked at the cheapest rate — full quality guaranteed",
-    price: 89.99,
+    price: 79.99,
     originalPrice: 199.99,
-    perMonth: 3.75,
+    perMonth: 3.33,
     period: "2 years",
     devices: 5,
-    badge: "Deepest Discount — Save 55%",
-    discount: "-55%",
+    badge: "Deepest Discount — Save 60%",
+    discount: "-60%",
     accentColor: "violet",
     features: [
       "37,000+ live channels with full UK coverage",
@@ -182,7 +192,7 @@ export const PRICING_PLANS = [
       "Instant activation in under 60 seconds",
     ],
     popular: false,
-    savings: "Save 55%",
+    savings: "Save 60%",
   },
 ] as const;
 
@@ -260,7 +270,7 @@ export const FAQ_ITEMS = [
   {
     question: "How much does the cheapest plan cost?",
     answer:
-      "The entry price works out to twelve pounds ninety-nine per month on the three-month plan. Longer commitments reduce the per-month cost further — the 24-month plan saves 55 percent compared to monthly equivalents.",
+      "The three-month Bronze plan is £25.99 in total, which works out to about £8.66 per month. Longer commitments lower the per-month cost further — the 24-month Diamond plan drops to £3.33 per month, the cheapest published rate, saving 60 percent against short-term equivalents.",
   },
   {
     question: "Is there a hidden fee for 4K or VPN?",
@@ -290,7 +300,7 @@ export const FAQ_ITEMS = [
   {
     question: "How does this compare to traditional pay-TV?",
     answer:
-      "A premium pay-TV bundle with sports and cinema costs roughly seventy-five pounds per month on a 24-month contract. This cheap IPTV subscription delivers 37,000 channels from £4.99/month with no lock-in. More content, lower price, greater flexibility.",
+      "A premium pay-TV bundle with sports and cinema costs roughly seventy-five pounds per month on a 24-month contract. This cheap IPTV subscription delivers 37,000 channels from £3.33/month with no lock-in. More content, lower price, greater flexibility.",
   },
   {
     question: "Is a separate VPN required?",
@@ -301,6 +311,16 @@ export const FAQ_ITEMS = [
     question: "Why choose cheap-iptv.tv over other IPTV providers?",
     answer:
       "37,000 channels, 198,000 films, 4K UHD, VPN, five screens, 60-second activation and 24/7 UK support — all from a single low monthly rate. No other IPTV provider in Britain matches this combination at this price point.",
+  },
+  {
+    question: "Is this the best cheap IPTV UK service?",
+    answer:
+      "It is built to be. A best cheap IPTV UK service has to win on more than price: 37,000+ channels with full UK coverage, native 4K UHD, a built-in VPN, five simultaneous screens, instant activation and a genuine 30-day money-back guarantee — all included on every plan, backed by a named British support team. Cheap-iptv.tv pairs the lowest published prices with that complete feature set, which is what makes it one of the best-value cheap IPTV UK options available.",
+  },
+  {
+    question: "How do I buy a cheap IPTV subscription?",
+    answer:
+      "Choose a plan in the pricing section, complete a one-time payment by card or PayPal, and your login arrives by email within about sixty seconds. There is no contract and no stored card — the cheap IPTV subscription runs for its fixed term and simply expires unless you renew. Every plan is covered by the 30-day money-back guarantee, so you can buy and test it risk-free.",
   },
 ] as const;
 
@@ -378,13 +398,13 @@ export const BLOG_POSTS = [
     category: "Comparison",
   },
   {
-    slug: "live-uk-sports-streaming-guide",
-    title: "Watch Live UK Sports — Cheap IPTV Streaming Guide",
+    slug: "cheap-iptv-subscription-uk-guide",
+    title: "Cheap IPTV Subscription UK — Plans, Pricing & What's Included In 2026",
     excerpt:
-      "Top-tier UK football, domestic cup ties, European nights and combat sports — all covered in stunning HD and 4K quality through a cheap IPTV subscription.",
-    date: "2026-03-10",
-    readTime: "5 min read",
-    category: "Sports",
+      "A plain-English guide to choosing a cheap IPTV subscription in the UK: how the plans work, what every plan includes, how to judge value, and how to start in minutes.",
+    date: "2026-06-29",
+    readTime: "9 min read",
+    category: "Guide",
   },
 ] as const;
 
